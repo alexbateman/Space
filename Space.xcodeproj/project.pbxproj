@@ -14,6 +14,8 @@
 		115A04101CCB37D400737065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A040E1CCB37D400737065 /* LaunchScreen.storyboard */; };
 		115A041B1CCB37D500737065 /* SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A041A1CCB37D500737065 /* SpaceTests.swift */; };
 		115A04261CCB37D500737065 /* SpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A04251CCB37D500737065 /* SpaceUITests.swift */; };
+		115A04361CCB3BE200737065 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A04351CCB3BE100737065 /* SpaceViewController.swift */; };
+		115A04381CCB5CE200737065 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A04371CCB5CE200737065 /* AppearanceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		115A04211CCB37D500737065 /* SpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115A04251CCB37D500737065 /* SpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceUITests.swift; sourceTree = "<group>"; };
 		115A04271CCB37D500737065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115A04351CCB3BE100737065 /* SpaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
+		115A04371CCB5CE200737065 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppearanceController.swift; path = ../AppearanceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		115A04041CCB37D400737065 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				115A04371CCB5CE200737065 /* AppearanceController.swift */,
 				115A04051CCB37D400737065 /* AppDelegate.swift */,
 				115A04071CCB37D400737065 /* ViewController.swift */,
+				115A04351CCB3BE100737065 /* SpaceViewController.swift */,
 				115A04091CCB37D400737065 /* Main.storyboard */,
 				115A040C1CCB37D400737065 /* Assets.xcassets */,
 				115A040E1CCB37D400737065 /* LaunchScreen.storyboard */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				115A04081CCB37D400737065 /* ViewController.swift in Sources */,
+				115A04381CCB5CE200737065 /* AppearanceController.swift in Sources */,
 				115A04061CCB37D400737065 /* AppDelegate.swift in Sources */,
+				115A04361CCB3BE200737065 /* SpaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
