@@ -15,9 +15,9 @@ class SpaceViewController: UIViewController {
         super.viewDidLoad()
 //        AppearanceController.initalizeAppearance()
         
-        let html = "<html><body><iframe src=\"https://www.ustream.tv/embed/17074538?v=3&amp;controls=false&autoplay=true\" width=\"450\" height=\"350\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
+        let html = "<html><body><iframe src=\"https://www.ustream.tv/embed/17074538?v=3&amp;controls=false&autoplay=true\" width=\"1450\" height=\"1350\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
         
-//        let html = "<html><body><iframe src=\"https://www.ustream.tv/embed/9408562?html5ui\" width=\"450\" height=\"350\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
+//        let html = "<html><body><iframe src=\"https://www.ustream.tv/embed/9408562?html5ui\" width=\"1450\" height=\"1350\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
         
         
         SpaceView.loadHTMLString(html, baseURL: nil)

@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Izv-GA-ZGu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="N7V-Yg-AyV">
+            <objects>
+                <viewController id="Izv-GA-ZGu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NfI-0u-CHJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Zd-7X-DKv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JZb-pg-1a2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth View" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-Hn-Un5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pm-ml-hEG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" action="showViewController:sender:" id="nfJ-aM-372"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Pm-ml-hEG" firstAttribute="bottom" secondItem="0Zd-7X-DKv" secondAttribute="top" id="3So-iW-KM2"/>
+                            <constraint firstItem="FvE-Hn-Un5" firstAttribute="top" secondItem="JZb-pg-1a2" secondAttribute="top" id="4Hw-wp-Cv7"/>
+                            <constraint firstItem="FvE-Hn-Un5" firstAttribute="trailing" secondItem="3Pm-ml-hEG" secondAttribute="trailing" id="Olu-c3-hAq"/>
+                            <constraint firstItem="FvE-Hn-Un5" firstAttribute="leading" secondItem="3Pm-ml-hEG" secondAttribute="leading" id="cSG-sh-PO5"/>
+                            <constraint firstItem="3Pm-ml-hEG" firstAttribute="top" secondItem="FvE-Hn-Un5" secondAttribute="top" id="o5E-eG-yfI"/>
+                            <constraint firstAttribute="trailing" secondItem="3Pm-ml-hEG" secondAttribute="trailing" id="p2i-o5-9MV"/>
+                            <constraint firstItem="FvE-Hn-Un5" firstAttribute="bottom" secondItem="0Zd-7X-DKv" secondAttribute="top" id="sWZ-7b-rV1"/>
+                            <constraint firstItem="FvE-Hn-Un5" firstAttribute="leading" secondItem="JZb-pg-1a2" secondAttribute="leading" id="soU-PB-39D"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKU-yI-ReP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="387"/>
+        </scene>
         <!--Space View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,16 +57,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfx-KR-als">
-                                <rect key="frame" x="75" y="125" width="450" height="350"/>
+                                <rect key="frame" x="-425" y="-375" width="1450" height="1350"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="RVl-Mm-a26"/>
-                                    <constraint firstAttribute="width" constant="450" id="rPJ-Id-rIa"/>
+                                    <constraint firstAttribute="height" constant="1350" id="RVl-Mm-a26"/>
+                                    <constraint firstAttribute="width" constant="1450" id="rPJ-Id-rIa"/>
                                 </constraints>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vfx-KR-als" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KDv-Uu-FZ3"/>
                             <constraint firstItem="vfx-KR-als" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gFl-ML-KmH"/>
@@ -43,4 +82,7 @@
             <point key="canvasLocation" x="1117" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Earth View" width="1257" height="773"/>
+    </resources>
 </document>
